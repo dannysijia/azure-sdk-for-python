@@ -19,7 +19,7 @@ steps:
       Write-Host "$(Build.SourcesDirectory)"
       dir $(Build.SourcesDirectory)
       cd '$(Agent.BuildDirectory)'
-      .'\retrieve-codeowners `
+      .\retrieve-codeowners `
         --target-directory "/sdk/${{ parameters.ServiceDirectory }}/" `
         --root-directory "$(Build.SourcesDirectory)" `
         --vso-owning-users "${{ parameters.TargetUserVariable }}" `
