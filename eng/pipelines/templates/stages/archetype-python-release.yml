@@ -276,6 +276,7 @@ stages:
             SkipDefaultCheckout: true 
             Paths:
               - sdk/**/*.md
+              - .github
         - download: current
         - pwsh: |
             Get-ChildItem -Recurse $(Pipeline.Workspace)/${{parameters.ArtifactName}}/
