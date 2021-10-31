@@ -46,7 +46,7 @@ param(
   [string]$RepoId,
 
   [Parameter(Mandatory = $true)]
-  [string]$codeOwners
+  [string]$CodeOwners
 )
 
 . (Join-Path $PSScriptRoot common.ps1)
