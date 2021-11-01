@@ -45,7 +45,7 @@ param(
   [Parameter(Mandatory = $true)]
   [string]$RepoId,
 
-  [Parameter(Mandatory = $true)]
+  [Parameter(Mandatory = $false)]
   [string]$CodeOwners
 )
 
