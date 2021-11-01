@@ -84,8 +84,8 @@ function GetAdjustedReadmeContent($ReadmeContent, $PackageInfo, $PackageMetadata
   }
   
   $author = ""
-  if ($codeOwners) {
-    $author = $codeOwners[0]
+  if ($CodeOwners) {
+    $author = $CodeOwners[0]
   }
   elseif (Test-Path '$PSScriptRoot/default-code-owner.txt') {
     $author = Get-Content '$PSScriptRoot/default-code-owner.txt' -Raw
